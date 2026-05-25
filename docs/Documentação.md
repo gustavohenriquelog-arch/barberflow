@@ -151,6 +151,6 @@ Inclui:
 - Otimizar custo de tokens  
 - Validar com clientes reais  
 - Evoluir planos e funcionalidades
-- Criar Home page e site  
+- Criar (site) Home page e página de vendas
 
 ---
