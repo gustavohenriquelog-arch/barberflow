@@ -21,7 +21,7 @@ O cronograma está dividido em 4 semanas:
 **Foco:** Garantir funcionamento sem erros
 
 ### Tarefas:
-- [ ] Corrigir formato de data no node Agenda (ISO)
+- [x] Corrigir formato de data no node Agenda (ISO)
 - [ ] Validar salvamento no Google Sheets
 - [ ] Testar fluxo completo (início → fim)
 - [ ] Ajustar memory (reduzir tokens)
