@@ -1,4 +1,4 @@
-# 🚀 Assistente Virtual Barber Code
+# 🚀 Assistente Virtual BarberFlow
 Sistema inteligente de atendimento e agendamento via WhatsApp
 
 ---
@@ -10,7 +10,7 @@ Documentação do projeto em evolução contínua. Esta versão apresenta a estr
 
 ## 🧠 Visão Geral
 
-O **Assistente Virtual Barber Code** é uma solução de automação de atendimento desenvolvida para barbearias, com foco em agendamentos via WhatsApp de forma rápida, eficiente e escalável.
+O **Assistente Virtual BarberFlow** é uma solução de automação de atendimento desenvolvida para barbearias, com foco em agendamentos via WhatsApp de forma rápida, eficiente e escalável.
 
 Construído com tecnologias modernas de automação e inteligência artificial, o sistema integra atendimento automatizado, gestão de agenda e interação humanizada com clientes em tempo real, proporcionando ganho de produtividade e padronização no atendimento.
 
