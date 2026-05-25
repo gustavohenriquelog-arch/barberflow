@@ -14,7 +14,7 @@ O **Assistente Virtual BarberFlow** é uma solução de automação de atendimen
 
 Construído com tecnologias modernas de automação e inteligência artificial, o sistema integra atendimento automatizado, gestão de agenda e interação humanizada com clientes em tempo real, proporcionando ganho de produtividade e padronização no atendimento.
 
-Através da combinação de **n8n (orquestração de fluxo)**, **Evolution Go (integração com WhatsApp)**, **modelos avançados de IA (OpenAI)**, além da integração com **Google Calendar (gestão de agenda)** e **Google Sheets (armazenamento e controle de dados)**, o Assistente Virtual Barber Code oferece uma experiência de atendimento contínua, automatizada e organizada, reduzindo a necessidade de intervenção manual e aumentando a eficiência operacional.
+Através da combinação de **n8n (orquestração de fluxo)**, **Evolution Go (integração com WhatsApp)**, **modelos avançados de IA (OpenAI)**, além da integração com **Google Calendar (gestão de agenda)** e **Google Sheets (armazenamento e controle de dados)**, o Assistente Virtual BarberFlow oferece uma experiência de atendimento contínua, automatizada e organizada, reduzindo a necessidade de intervenção manual e aumentando a eficiência operacional.
 
 O sistema é projetado como uma solução escalável, permitindo evolução contínua e adaptação conforme as necessidades do negócio.
 
