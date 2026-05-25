@@ -35,7 +35,7 @@ O sistema é projetado para:
 
 ## 🔄 Fluxo Principal
 
-O fluxo de processamento do Assistente Virtual Barber Code segue uma arquitetura sequencial, garantindo controle, validação e resposta eficiente ao cliente.
+O fluxo de processamento do Assistente Virtual BarberFlow segue uma arquitetura sequencial, garantindo controle, validação e resposta eficiente ao cliente.
 
 ---
 
