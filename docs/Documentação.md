@@ -150,6 +150,7 @@ Inclui:
 - Melhorar tratamento de erros  
 - Otimizar custo de tokens  
 - Validar com clientes reais  
-- Evoluir planos e funcionalidades  
+- Evoluir planos e funcionalidades
+- Criar Home page e site  
 
 ---
