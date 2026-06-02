@@ -1,0 +1,553 @@
+// ==========================================
+// BARBERFLOW CORE ENGINE
+// ==========================================
+
+// ==========================================
+// IGNORA MENSAGENS DO BOT
+// ==========================================
+
+const fromMe =
+  $json.body?.data?.Info?.IsFromMe ||
+  $json.body?.data?.key?.fromMe ||
+  false;
+
+if (fromMe) {
+  return [];
+}
+
+// ==========================================
+// INPUT
+// ==========================================
+
+const inputRaw =
+  $json.fullMessage ||
+  $json.body?.data?.Message?.conversation ||
+  $json.body?.data?.Message?.extendedTextMessage?.text ||
+  $json.body?.data?.message?.conversation ||
+  $json.body?.data?.message?.extendedTextMessage?.text ||
+  $json.chatInput ||
+  "";
+
+// ==========================================
+// TELEFONE
+// ==========================================
+
+const rawPhone =
+  $json.phone ||
+  $json.body?.data?.Info?.Chat ||
+  $json.body?.data?.key?.remoteJid ||
+  $json.body?.data?.Key?.remoteJid ||
+  $json.body?.data?.from ||
+  $json.from ||
+  null;
+
+let phone = null;
+
+if (rawPhone) {
+
+  phone = String(rawPhone)
+
+    .replace("@s.whatsapp.net", "")
+    .replace("@g.us", "")
+    .replace("@broadcast", "")
+
+    .replace(/\D/g, "");
+
+  if (phone.length < 10) {
+    phone = null;
+  }
+
+}
+
+// ==========================================
+// NORMALIZAÇÃO
+// ==========================================
+
+const normalized = inputRaw
+
+  .toLowerCase()
+
+  .normalize("NFD")
+
+  .replace(/[\u0300-\u036f]/g, "")
+
+  .replace(/[^\w\s:/-]/gi, "")
+
+  .replace(/\s+/g, " ")
+
+  .trim();
+
+// ==========================================
+// EXTRAÇÃO DE NOME (PRÉ-IA)
+// ==========================================
+
+let extractedName = null;
+
+const namePatterns = [
+
+  /meu nome e\s+([a-zA-ZÀ-ÿ]+)/i,
+  /meu nome é\s+([a-zA-ZÀ-ÿ]+)/i,
+  /me chamo\s+([a-zA-ZÀ-ÿ]+)/i,
+  /sou\s+([a-zA-ZÀ-ÿ]+)/i,
+  /aqui e\s+([a-zA-ZÀ-ÿ]+)/i,
+  /aqui é\s+([a-zA-ZÀ-ÿ]+)/i
+
+];
+
+for (const pattern of namePatterns) {
+
+  const match = inputRaw.match(pattern);
+
+  if (match) {
+
+    extractedName =
+      match[1]
+        .charAt(0)
+        .toUpperCase() +
+      match[1]
+        .slice(1)
+        .toLowerCase();
+
+    break;
+
+  }
+
+}
+
+// ==========================================
+// TIMESTAMP
+// ==========================================
+
+const timestamp =
+  new Date().toISOString();
+
+// ==========================================
+// TIPO DA MENSAGEM
+// ==========================================
+
+const messageType =
+  $json.body?.data?.Info?.MediaType ||
+  "text";
+
+// ==========================================
+// LISTAS
+// ==========================================
+
+const greetings = [
+
+  "oi",
+  "ola",
+  "olá",
+  "bom dia",
+  "boa tarde",
+  "boa noite"
+
+];
+
+const simpleReplies = [
+
+  "ok",
+  "blz",
+  "valeu",
+  "obrigado",
+  "obrigada",
+  "show",
+  "top",
+  "perfeito",
+  "beleza",
+  "👍"
+
+];
+
+// ==========================================
+// FLAGS
+// ==========================================
+
+const isGreeting =
+  greetings.includes(normalized);
+
+const isSimple =
+  simpleReplies.includes(normalized);
+
+const isEmpty =
+  normalized.length === 0;
+
+const isMedia = [
+
+  "image",
+  "audio",
+  "video",
+  "document"
+
+].includes(messageType);
+
+// ==========================================
+// AUTO REPLY
+// ==========================================
+
+const hour =
+  new Date().getHours();
+
+let greetingText = "Olá";
+
+if (hour >= 5 && hour <= 11) {
+
+  greetingText = "Bom dia";
+
+}
+
+else if (hour >= 12 && hour <= 17) {
+
+  greetingText = "Boa tarde";
+
+}
+
+else {
+
+  greetingText = "Boa noite";
+
+}
+
+let reply = null;
+
+if (isGreeting) {
+
+  reply =
+`${greetingText}! Seja bem-vindo à BarberFlow. Como posso te ajudar?`;
+
+}
+
+else if (isSimple) {
+
+  reply =
+    "Por nada! Qualquer coisa estou à disposição.";
+
+}
+
+else if (isMedia) {
+
+  reply =
+    "Recebi sua mídia, mas no momento consigo ajudar apenas com agendamentos.";
+
+}
+
+else if (isEmpty) {
+
+  reply =
+    "Não consegui entender sua mensagem.";
+
+}
+
+// ==========================================
+// ANTI SPAM
+// ==========================================
+
+const now = Date.now();
+
+const globalData =
+  $getWorkflowStaticData('global');
+
+if (!globalData.spamCache) {
+
+  globalData.spamCache = {};
+
+}
+
+const lastData =
+  globalData.spamCache[phone];
+
+let isSpam = false;
+
+if (lastData) {
+
+  const sameMessage =
+    lastData.message === normalized;
+
+  const shortInterval =
+    (now - lastData.timestamp) < 5000;
+
+  if (
+    sameMessage &&
+    shortInterval
+  ) {
+
+    isSpam = true;
+
+  }
+
+}
+
+globalData.spamCache[phone] = {
+
+  message: normalized,
+
+  timestamp: now
+
+};
+
+// ==========================================
+// SPAM = BLOQUEIA
+// ==========================================
+
+if (isSpam) {
+
+  console.log("SPAM DETECTADO");
+
+  return [];
+
+}
+
+// ==========================================
+// FAST INTENT
+// ==========================================
+
+let fastIntent = "outro";
+
+const contains = (keywords) =>
+
+  keywords.some(word =>
+    normalized.includes(word)
+  );
+
+// ==========================================
+// KEYWORDS
+// ==========================================
+
+const agendarKeywords = [
+
+  "agendar",
+  "agendamento",
+  "marcar",
+  "reservar",
+
+  "quero cortar",
+  "quero um corte",
+
+  "corte",
+  "cabelo",
+  "barba",
+  "combo",
+
+  "horario disponivel",
+  "tem horario",
+  "tem vaga"
+
+];
+
+const cancelarKeywords = [
+
+  "cancelar",
+  "desmarcar",
+  "cancelar horario",
+  "cancelar agendamento"
+
+];
+
+const reagendarKeywords = [
+
+  "reagendar",
+  "remarcar",
+  "mudar horario",
+  "trocar horario"
+
+];
+
+const infoKeywords = [
+
+  "valor",
+  "preco",
+  "preço",
+
+  "quanto custa",
+
+  "horario",
+  "funcionamento",
+
+  "endereco",
+  "onde fica"
+
+];
+
+// ==========================================
+// DETECÇÃO
+// ==========================================
+
+const foundCancelar =
+  contains(cancelarKeywords);
+
+const foundReagendar =
+  contains(reagendarKeywords);
+
+const foundAgendar =
+  contains(agendarKeywords);
+
+const foundInfo =
+  contains(infoKeywords);
+
+// ==========================================
+// PRIORIDADE
+// ==========================================
+
+if (foundCancelar) {
+
+  fastIntent = "cancelar";
+
+}
+
+else if (foundReagendar) {
+
+  fastIntent = "reagendar";
+
+}
+
+else if (foundAgendar) {
+
+  fastIntent = "agendar";
+
+}
+
+else if (foundInfo) {
+
+  fastIntent = "info";
+
+}
+
+// ==========================================
+// DATA/HORA
+// ==========================================
+
+const hasDateOrTime =
+
+  /\b\d{1,2}[:h]\d{2}\b/.test(normalized) ||
+
+  /\b\d{1,2}\/\d{1,2}\b/.test(normalized) ||
+
+  normalized.includes("amanha") ||
+
+  normalized.includes("amanhã") ||
+
+  normalized.includes("hoje") ||
+
+  normalized.includes("segunda") ||
+
+  normalized.includes("terca") ||
+
+  normalized.includes("terça") ||
+
+  normalized.includes("quarta") ||
+
+  normalized.includes("quinta") ||
+
+  normalized.includes("sexta") ||
+
+  normalized.includes("sabado") ||
+
+  normalized.includes("sábado");
+
+// ==========================================
+// CONTEXTO AGENDAMENTO
+// ==========================================
+
+if (
+
+  fastIntent === "outro" &&
+  hasDateOrTime
+
+) {
+
+  fastIntent = "agendar";
+
+}
+
+// ==========================================
+// IA NECESSÁRIA
+// ==========================================
+
+const needsAI =
+  fastIntent === "outro";
+
+// ==========================================
+// ROUTE
+// ==========================================
+
+let route = "direct";
+
+if (needsAI) {
+
+  route = "ai";
+
+}
+
+// ==========================================
+// DEBUG
+// ==========================================
+
+console.log({
+
+  phone,
+
+  originalMessage: inputRaw,
+
+  normalizedMessage: normalized,
+
+  isSpam,
+
+  fastIntent,
+
+  needsAI,
+
+  route
+
+});
+
+// ==========================================
+// OUTPUT
+// ==========================================
+
+return [
+  {
+    json: {
+
+      ...$json,
+
+      // mensagem
+      originalMessage: inputRaw,
+      normalizedMessage: normalized,
+
+      // telefone
+      rawPhone,
+      phone,
+
+      // tempo
+      timestamp,
+
+      // tipo
+      messageType,
+
+      // flags
+      isGreeting,
+      isSimple,
+      isEmpty,
+      isMedia,
+
+      // resposta
+      reply,
+
+      // anti spam
+      isSpam,
+
+      // intent
+      fastIntent,
+
+      // IA
+      needsAI,
+
+      // route
+      route,
+      
+      // name
+      extractedName
+
+    }
+  }
+];
