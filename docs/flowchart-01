@@ -1,69 +1,104 @@
----
-config:
-  theme: redux
----
 flowchart TD
-    A(["INÍCIO: Navegador faz requisição"]) 
-    
-    A --> B["Navegador envia request para Gateway"]
-    
-    B --> C{"É preflight<br/>CORS?"}
-    C -->|Sim| D["Gateway responde OK<br/>com headers CORS"]
-    D --> A
-    C -->|Não| E["Request com token JWT<br/>no header Authorization"]
-    
-    E --> F["Gateway recebe request"]
-    
-    F --> G["Validar JWT<br/>assinatura, validade"]
-    
-    G --> H{"JWT<br/>válido?"}
-    
-    H -->|Não| I["Retorna 401<br/>para navegador"]
-    I --> A
-    
-    H -->|Sim| J["Extrai informações do JWT<br/>usuário, roles, scopes"]
-    
-    J --> K["Adiciona headers secretos:<br/>X-Gateway-Secret<br/>X-User-Id"]
-    
-    K --> L["Encaminha request<br/>para backend aura-api"]
-    
-    L --> M["Backend recebe request"]
-    
-    M --> N["Filter verifica<br/>X-Gateway-Secret"]
-    
-    N --> O{"Secret<br/>correto?"}
-    
-    O -->|Não| P["Retorna 403<br/>para gateway"]
-    P --> L
-    
-    O -->|Sim| Q["Executa lógica do negócio<br/>Controller → Service → BD"]
-    
-    Q --> R["Retorna resposta<br/>200 OK com dados"]
-    
-    R --> S["Gateway encaminha<br/>resposta ao navegador"]
-    
-    S --> T(["FIM: Navegador recebe resposta"])
-    
-    style A fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
-    style T fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
-    
-    style B fill:#e3f2fd,stroke:#1976d2
-    style C fill:#e3f2fd,stroke:#1976d2
-    style D fill:#e3f2fd,stroke:#1976d2
-    style E fill:#e3f2fd,stroke:#1976d2
-    style F fill:#e3f2fd,stroke:#1976d2
-    style G fill:#e3f2fd,stroke:#1976d2
-    style H fill:#e3f2fd,stroke:#1976d2
-    style I fill:#ffebee,stroke:#d32f2f
-    style J fill:#e3f2fd,stroke:#1976d2
-    style K fill:#e3f2fd,stroke:#1976d2
-    style L fill:#e3f2fd,stroke:#1976d2
-    
-    style M fill:#f3e5f5,stroke:#7b1fa2
-    style N fill:#f3e5f5,stroke:#7b1fa2
-    style O fill:#f3e5f5,stroke:#7b1fa2
-    style P fill:#ffebee,stroke:#d32f2f
-    style Q fill:#f3e5f5,stroke:#7b1fa2
-    style R fill:#f3e5f5,stroke:#7b1fa2
-    
-    style S fill:#e3f2fd,stroke:#1976d2
+
+    %% =========================
+    %% ENTRADA
+    %% =========================
+
+    A[Mensagem recebida via WhatsApp] --> B[Webhook n8n]
+    B --> C[Normalização da mensagem]
+
+    %% =========================
+    %% IDENTIFICAÇÃO DO CLIENTE
+    %% =========================
+
+    C --> D{Cliente já existe?}
+
+    D -->|Sim| E[Buscar histórico resumido]
+    D -->|Não| F[Criar perfil do cliente]
+
+    E --> G[Carregar memória curta]
+    F --> G
+
+    %% =========================
+    %% SEGURANÇA
+    %% =========================
+
+    G --> H[Agente de Segurança]
+
+    H --> I{Mensagem permitida?}
+
+    I -->|Não| J[Responder mensagem de bloqueio]
+    J --> Z[Fim]
+
+    I -->|Sim| K[Classificador de Intenção]
+
+    %% =========================
+    %% CLASSIFICAÇÃO
+    %% =========================
+
+    K --> L{Objetivo da conversa}
+
+    L -->|Horários| M[Agente Horários]
+    L -->|Serviços| N[Agente Serviços]
+    L -->|Valores| O[Agente Valores]
+    L -->|Agendamento| P[Agente Agendamento]
+    L -->|Cancelamento| Q[Agente Cancelamento]
+    L -->|Reagendamento| S[Agente Reagendamento]
+    L -->|Fora do Escopo| R[Agente Restrição]
+
+    %% =========================
+    %% AGENTES ESPECIALIZADOS
+    %% =========================
+
+    M --> T[Gerar resposta]
+    N --> T
+    O --> T
+    P --> U[Consultar agenda]
+    Q --> V[Consultar agendamento]
+    S --> X[Consultar agendamento e nova disponibilidade]
+    R --> W[Mensagem de escopo]
+
+    U --> T
+    V --> T
+    X --> T
+
+    %% =========================
+    %% REDUÇÃO DE TOKENS
+    %% =========================
+
+    T --> Y[Resumidor de contexto]
+    W --> Y
+
+    %% =========================
+    %% MEMÓRIA
+    %% =========================
+
+    Y --> AA[Salvar memória resumida]
+
+    %% =========================
+    %% OBSERVABILIDADE
+    %% =========================
+
+    AA --> AB[Salvar logs]
+    AB --> AC[Métricas e monitoramento]
+
+    %% =========================
+    %% RESPOSTA
+    %% =========================
+
+    AC --> AD[Enviar resposta WhatsApp]
+    AD --> Z[Fim]
+
+    %% =========================
+    %% ESTILOS
+    %% =========================
+
+    classDef security fill:#ffdddd,stroke:#ff0000,color:#000;
+    classDef agent fill:#ddeeff,stroke:#0077cc,color:#000;
+    classDef memory fill:#fff2cc,stroke:#d6b656,color:#000;
+    classDef system fill:#e2f0d9,stroke:#70ad47,color:#000;
+
+    class H,I,J security;
+    class M,N,O,P,Q,R,S,T,U,V,W,X agent;
+    class E,G,Y,AA memory;
+    class A,B,C,AB,AC,AD system;
