@@ -1,0 +1,69 @@
+---
+config:
+  theme: redux
+---
+flowchart TD
+    A(["INÍCIO: Navegador faz requisição"]) 
+    
+    A --> B["Navegador envia request para Gateway"]
+    
+    B --> C{"É preflight<br/>CORS?"}
+    C -->|Sim| D["Gateway responde OK<br/>com headers CORS"]
+    D --> A
+    C -->|Não| E["Request com token JWT<br/>no header Authorization"]
+    
+    E --> F["Gateway recebe request"]
+    
+    F --> G["Validar JWT<br/>assinatura, validade"]
+    
+    G --> H{"JWT<br/>válido?"}
+    
+    H -->|Não| I["Retorna 401<br/>para navegador"]
+    I --> A
+    
+    H -->|Sim| J["Extrai informações do JWT<br/>usuário, roles, scopes"]
+    
+    J --> K["Adiciona headers secretos:<br/>X-Gateway-Secret<br/>X-User-Id"]
+    
+    K --> L["Encaminha request<br/>para backend aura-api"]
+    
+    L --> M["Backend recebe request"]
+    
+    M --> N["Filter verifica<br/>X-Gateway-Secret"]
+    
+    N --> O{"Secret<br/>correto?"}
+    
+    O -->|Não| P["Retorna 403<br/>para gateway"]
+    P --> L
+    
+    O -->|Sim| Q["Executa lógica do negócio<br/>Controller → Service → BD"]
+    
+    Q --> R["Retorna resposta<br/>200 OK com dados"]
+    
+    R --> S["Gateway encaminha<br/>resposta ao navegador"]
+    
+    S --> T(["FIM: Navegador recebe resposta"])
+    
+    style A fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
+    style T fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
+    
+    style B fill:#e3f2fd,stroke:#1976d2
+    style C fill:#e3f2fd,stroke:#1976d2
+    style D fill:#e3f2fd,stroke:#1976d2
+    style E fill:#e3f2fd,stroke:#1976d2
+    style F fill:#e3f2fd,stroke:#1976d2
+    style G fill:#e3f2fd,stroke:#1976d2
+    style H fill:#e3f2fd,stroke:#1976d2
+    style I fill:#ffebee,stroke:#d32f2f
+    style J fill:#e3f2fd,stroke:#1976d2
+    style K fill:#e3f2fd,stroke:#1976d2
+    style L fill:#e3f2fd,stroke:#1976d2
+    
+    style M fill:#f3e5f5,stroke:#7b1fa2
+    style N fill:#f3e5f5,stroke:#7b1fa2
+    style O fill:#f3e5f5,stroke:#7b1fa2
+    style P fill:#ffebee,stroke:#d32f2f
+    style Q fill:#f3e5f5,stroke:#7b1fa2
+    style R fill:#f3e5f5,stroke:#7b1fa2
+    
+    style S fill:#e3f2fd,stroke:#1976d2
