@@ -52,8 +52,3 @@ São empresas que já possuem funcionários e, muitas vezes, mais de um profissi
 
 Se o OraZap capturar uma fração minúscula desse mercado massivo, o faturamento recorrente (MRR) viabiliza o projeto de forma extraordinária:
 
-| Penetração de Mercado | Clientes Ativos (Empresas/Autônomos) | Receita Mensal Recorrente Est. (Ticket Médio de R$ 79,00) |
-| :--- | :--- | :--- |
-| **0,01%** (Início/Validação) | 1.200 clientes | **R$ 94.800,00 / mês** |
-| **0,05%** (Média Escala) | 6.000 clientes | **R$ 474.000,00 / mês** |
-| **0,10%** (Grande Escala) | 12.000 clientes | **R$ 948.000,00 / mês** |
