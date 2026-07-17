@@ -50,5 +50,5 @@ São empresas que já possuem funcionários e, muitas vezes, mais de um profissi
 
 ## 📈 4. Projeção de Penetração de Mercado (Metas OraZap)
 
-Se o OraZap capturar uma fração minúscula desse mercado massivo, o faturamento recorrente (MRR) viabiliza o projeto de forma extraordinária:
+Se o OraZap capturar uma fração minúscula desse mercado massivo, o faturamento recorrente (MRR) viabiliza o projeto de forma extraordinária.
 
