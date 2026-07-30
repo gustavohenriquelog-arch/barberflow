@@ -12,9 +12,8 @@
 | Evitar nomes que já estejam em uso por produtos com propósito semelhante              | 10   |
 | Não é permitido erro de Português                                                     | 10   |
 | Permite portmanteau ou palavra-valise para criação de um nome não existente           | 5    |
-| Nome com significado que remete ao produto ofertado ou caracteristicas caracterisicas | 5    |
+| Nome com significado que remete ao produto ofertado ou caracteristicas                | 5    |
 | Disponíveis para expansão internacional                                               | 5    |
-| Nome com significado que remete ao produto ofertado ou caracteristicas caracterisicas | 5    |
 
 
 ## Frases que representam o produto
