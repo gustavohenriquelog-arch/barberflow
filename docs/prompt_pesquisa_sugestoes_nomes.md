@@ -7,7 +7,7 @@
 | Não avaliar por gosto pessoal e sim por critérios                                     | 10   |
 | Nome com no máximo 4 silabas fonéticas                                                | 10   |
 | Permitido uso de tags como complemento do nome; Exemplos: Zap, Go, All, AI, IA        | 5    |
-| O nome deve ser em `Inglês` ou `Português`                                            | 10   |
+| O nome deve ser em `Português`                                                        | 10   |
 | Evitar nomes cujo domínio na `Internet` já esteja sem uso                             | 10   |
 | Evitar nomes que já estejam em uso por produtos com propósito semelhante              | 10   |
 | Não é permitido erro de Português                                                     | 10   |
