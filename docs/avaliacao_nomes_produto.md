@@ -1,26 +1,30 @@
 # Avaliação de Nomes para o Produto SaaS
 
-**Critérios utilizados**
-
-- Clareza
-- Facilidade de pronúncia
-- Memorabilidade
-- Relação com o produto
-- Potencial de marca
-- Escalabilidade
+| Critério                                    |  Peso |
+| ------------------------------------------- | :---: |
+| Não avaliar por gosto pessoal               | ⭐⭐⭐⭐⭐ |
+| Clareza do significado                      | ⭐⭐⭐⭐⭐ |
+| Memorabilidade                              | ⭐⭐⭐⭐⭐ |
+| Até 4 sílabas fonéticas (preferencialmente) |  ⭐⭐⭐⭐ |
+| Escalabilidade da marca                     | ⭐⭐⭐⭐⭐ |
+| Internacionalização                         | ⭐⭐⭐⭐⭐ |
+| Potencial para registro de marca*           |  ⭐⭐⭐⭐ |
+| Relação com IA, automação e agendamento     | ⭐⭐⭐⭐⭐ |
+| Longevidade da marca                        | ⭐⭐⭐⭐⭐ |
 
 ---
 
-| Ranking | Nome                                   |   Nota  | Comentário                                                                                 |
-| :-----: | -------------------------------------- | :-----: | ------------------------------------------------------------------------------------------ |
-|    🥇   | **NeoFlow**                            | **9,7** | Marca moderna, tecnológica, escalável e forte para uma empresa de software.                |
-|    🥈   | **NexFlow**                            | **9,6** | "Next Flow". Excelente para IA e automação. Soa como startup internacional.                |
-|    🥉   | **SlotOne**                            | **9,5** | Excelente para agendamento. Muito memorável, mas mais específico ao nicho.                 |
-|    4    | **OneFlow**                            | **9,4** | Elegante e minimalista. Remete a processos unificados.                                     |
-|    5    | **AgendaFlow**                         | **9,3** | Muito claro sobre o produto, porém limita um pouco a expansão da marca.                    |
-|    6    | **OrionFlow**                          | **9,2** | Passa inovação e tecnologia. Um pouco mais longo, mas forte.                               |
-|    7    | **SlotCore**                           | **9,0** | Robusto e técnico. Boa opção para B2B, porém menos amigável ao público geral.              |
-|    8    | **HoraFlow**                           | **8,8** | Fácil de entender, mas bastante descritivo e menos internacional.                          |
-|    9    | **ReservAI** *(corrigindo "RevervAI")* | **8,5** | A ideia é boa (Reserva + AI), mas o nome precisa da grafia correta.                        |
-|    10   | **MarqAI**                             | **7,8** | Moderno, porém o significado não fica claro para quem conhece o produto pela primeira vez. |
+| Ranking | Nome           |   Nota  | Significado                                                                  |
+| :-----: | -------------- | :-----: | ---------------------------------------------------------------------------- |
+|    🥇   | **NeoFlow**    | **9,8** | Nova geração de automação e fluxos inteligentes.                             |
+|    🥈   | **NexFlow**    | **9,7** | Próximo nível dos fluxos e da automação.                                     |
+|    🥉   | **SlotOne**    | **9,6** | Plataforma única para gerenciamento de horários.                             |
+|    4    | **OneFlow**    | **9,5** | Um fluxo único para centralizar processos.                                   |
+|    5    | **ReservaIA**  | **9,4** | Reserva inteligente utilizando IA. Muito claro para o público brasileiro.    |
+|    6    | **OrionFlow**  | **9,3** | Tecnologia inspirada em inovação e automação.                                |
+|    7    | **AgendaFlow** | **9,2** | Fluxo inteligente de agendamentos. Comunica exatamente o produto.            |
+|    8    | **SlotCore**   | **9,0** | O núcleo da gestão de horários. Forte para B2B.                              |
+|    9    | **HoraFlow**   | **8,9** | Fluxo inteligente para gerenciamento de horários.                            |
+|    10   | **MarqAI**     | **7,9** | Nome moderno, mas o significado não é imediatamente associado a agendamento. |
+
 
