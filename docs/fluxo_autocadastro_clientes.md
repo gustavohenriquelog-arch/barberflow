@@ -34,7 +34,7 @@ Após a conclusão do cadastro, o usuário é direcionado para um assistente de 
    * Valores cobrados por cada item.
 
 3. **Conexão da Agenda e WhatsApp:**
-   * Conexão com a plataforma de agendamento Web.
+   * Conexão com a plataforma de agendamento Web e configuração da Agenda.
    * Vinculação da instância de WhatsApp (via escaneamento de QR Code ou autenticação da API Cloud).
 
 ---
@@ -50,7 +50,7 @@ Ao concluir esses 3 passos rápidos, a conta do **OraZap** entra em operação i
 
 ### 4. Regras do Período de Degustação (Trial de 15 Dias)
 
-* **Acesso Total:** Durante os 15 dias, o cliente tem acesso irrestrito às funcionalidades do plano Starter (agendamentos por IA ilimitados e sincronização de agenda).
+* **Acesso Total:** Durante os 15 dias, o cliente tem acesso irrestrito às funcionalidades do plano (agendamentos por IA ilimitados e sincronização de agenda).
 * **Régua de Reengajamento:** No 10º e 14º dia de teste, o sistema dispara lembretes via WhatsApp e e-mail informando sobre a conclusão do período gratuito.
 * **Transição para Assinatura:** No 15º dia, é exibida a tela para inclusão do método de pagamento (Cartão de Crédito ou PIX Recorrente) no valor de R$ 87,90/mês para manter o serviço ativo sem interrupções.
 
