@@ -1,6 +1,6 @@
 # 💰 Estratégia de Precificação e Diferenciação Competitiva (OraZap)
 
-Este documento estabelece o modelo de monetização do **OraZap**, analisando o cenário competitivo contra o principal concorrente (**RobotiZap**) e detalhando a estrutura do modelo de precificação modular por agendas adicionais.
+Este documento estabelece o modelo de monetização do **OraZap**, analisando o cenário competitivo contra os principais concorrente e detalhando a estrutura do modelo de precificação modular por agendas adicionais.
 
 ---
 
