@@ -8,7 +8,7 @@ Este documento estabelece o modelo de monetização do **OraZap**, analisando o 
 
 O mercado atual de automação via WhatsApp para PMEs apresenta soluções com cobranças complexas ou limitações de recursos. A estratégia do **OraZap** foca na **previsibilidade financeira** e no **ganho de escala para estabelecimentos com múltiplos profissionais**.
 
-| Critério de Comparação | Concorrência (Ex: RobotizZap) | **OraZap (Nossa Solução)** | Diferencial Competitivo |
+| Critério de Comparação | Concorrência  | **OraZap (Nossa Solução)** | Diferencial Competitivo |
 | :--- | :--- | :--- | :--- |
 | **Barreira de Entrada** | Exige dados de pagamento no cadastro ou trial limitado/pago. | **15 Dias Grátis** sem necessidade de cartão de crédito. | Baixo atrito na conversão (*Self-Service*). |
 | **Modelo de Cobrança** | Planos engessados por recursos ou limite de mensagens. | **Plano Base Único + Módulos de Agendas Adicionais**. | Simplicidade na escolha e previsibilidade de custos. |
@@ -27,8 +27,7 @@ A precificação do **OraZap** é composta por um **Plano Base (Anchor Plan)** q
   * 1 Agenda Ativa (Integração com Plataforma Web).
   * Atendimento por IA Conversacional ilimitado via WhatsApp.
   * Autocadastro de serviços, horários e preços.
-  * Lembretes automáticos e gestão de confirmações.
-
+  
 #### **Escala de Expansão (Agendas Adicionais)**
 Para estabelecimentos que possuem múltiplos colaboradores (ex: barbeiros, manicures, esteticistas) utilizando a mesma conta e o mesmo número de WhatsApp:
 * **Regra de Adicional:** + R$ 50,00/mês por agenda extra.
