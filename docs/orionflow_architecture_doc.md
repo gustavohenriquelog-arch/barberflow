@@ -71,7 +71,7 @@ O sistema resolve a dor do empreendedor que perde receita por não conseguir res
 * **Mitigação do Risco R04 (Resistência do Cliente):**
   * Onboarding ultra-rápido (menos de 5 minutos).
   * Painel de transparência para visualizar histórico de mensagens do bot.
-  * Resumos diários de agendamentos e faturamento para reforçar o valor gerado.
+  * Resumos diários de agendamentos para reforçar o valor gerado.
 * **Foco Inicial (MVP):**
   * Agendamento passivo em resposta às chamadas do cliente.
   * Sem disparos de lembretes automáticos ativos na fase 1 (mantendo o uso do WhatsApp 100% dentro da faixa gratuita de *Service*).
