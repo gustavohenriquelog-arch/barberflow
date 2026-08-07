@@ -14,21 +14,37 @@ O sistema resolve a dor do empreendedor que perde receita por não conseguir res
 
 ## 2. Visão de Arquitetura Técnica
 
-[ Cliente no WhatsApp ]
-│
-▼
-[ API Oficial da Meta (Cloud API) ]
-│  (1.000 conversas gratuitas/mês por WABA)
-▼
-[ Orquestrador n8n + LLM (OpenAI / Ollama) ]
-│
-├── (Protocolo MCP / API REST)
-▼
-[ Plataforma Web OrionFlow ]
-│  (Gestão de Agenda, Clientes e Dashboard)
-▼
-[ Banco de Dados ]
-
+```text
+┌───────────────────────────────┐
+│ Cliente no WhatsApp           │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│ API Oficial da Meta           │
+│ Cloud API                     │
+│ 1.000 conversas grátis/mês    │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│ n8n + LLM                     │
+│ OpenAI / Ollama               │
+└───────────────┬───────────────┘
+                │
+      MCP / API REST
+                │
+                ▼
+┌───────────────────────────────┐
+│ Plataforma OrionFlow          │
+│ Agenda • Clientes • Dashboard │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│ Banco de Dados                │
+└───────────────────────────────┘
+```
 
 ### Componentes Principais
 
