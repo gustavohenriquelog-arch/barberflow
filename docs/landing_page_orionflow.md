@@ -1,4 +1,4 @@
-Atue como um Copywriter especialista em Landing Pages de SaaS B2B com foco em alta conversão e microempresários (profissionais solo).
+Atue como um Copywriter persuasivo especialista em Landing Pages de SaaS B2B com foco em alta conversão e microempresários (profissionais solo).
 Objetivo: Criar todo o texto e a estrutura da Landing Page do OrionFlow com tom direto, persuasivo e focado em dores reais.
 
 --- DADOS DO NEGÓCIO (ORIONFLOW) ---
