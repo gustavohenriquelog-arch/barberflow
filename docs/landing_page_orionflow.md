@@ -110,3 +110,22 @@ O OrionFlow tem o objetivo de auxiliar profissionais liberais e pequenas empresa
 
 11. Chamada Final (Rodapé Persuasivo):
 - Chamada impactante para o usuário não sair da página sem testar.
+
+### Estilo de Design e Tema (Atualizado)
+
+**Estética:**
+Estilo SaaS moderno, clean, dinâmico e tecnológico em modo claro (Light Mode), utilizando gradientes e brilhos neon da imagem para criar destaques de alto impacto visual.
+
+**Paleta de Cores e Hexadecimais:**
+* **Fundo da Página:** Branco Puro (`#FFFFFF`) e Cinza Suave (`#F8F9FA` / `#F3F4F6` para alternância de seções).
+* **Roxo Neon (Destaque Principal):** `#A822FF` (Aplicar em palavras de impacto, ícones e selos de destaque).
+* **Azul/Ciano Neon (Ação e CTAs):** `#007BFF` a `#00C8FF` (Aplicar em botões de ação principal, CTAs e links de destaque).
+* **Gradiente Neon Primário:** `linear-gradient(135deg, #A822FF 0%, #007BFF 100%)` (Para botões principais, títulos em gradiente e bordas de destaque).
+* **Tipografia e Textos:**
+  * **Títulos e Textos Principais:** Preto Grafite Escuro (`#0D0E12` ou `#111827`) para legibilidade máxima no fundo branco.
+  * **Subtítulos e Textos Secundários:** Cinza Escuro Neutro (`#4B5563`).
+
+**Layout e Componentes Visuais:**
+* **Tipografia:** Limpa, sem serifa (Sans-serif moderna como Inter ou Plus Jakarta Sans), com palavras-chave em gradiente Roxo-Azul.
+* **Cards e Contêineres:** Cards brancos com bordas finas em gradiente neon, sombras suaves (`box-shadow`) ou fundos levemente escurecidos/acizentados para destacar do fundo branco.
+* **Maquetes Visuais (Mockups):** Telas de celular com prévias de conversas do WhatsApp com contornos roxos/azuis bem definidos e elementos iluminados.
