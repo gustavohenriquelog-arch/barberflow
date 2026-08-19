@@ -118,3 +118,5 @@ Reescreva evitando genérico — ligue a missão diretamente ao diferencial (ex:
 
 ### 11. Chamada Final
 CTA de impacto reforçando o eixo segurança + agenda cheia, sem repetir literalmente o Hero.
+
+"Gere uma Landing Page completa, modular e responsiva em React + Tailwind CSS com base nas instruções acima. Crie componentes separados para cada uma das 11 seções descritas."
