@@ -1,6 +1,6 @@
 # PROMPT: Navegação + Telas de Login e Cadastro — OrionFlow (versão final)
 
-Atue como um Engenheiro Front-end especialista em React/Tailwind, responsável por implementar a navegação entre páginas e ajustar as telas de Login (`/login`) e Cadastro (`/register`) do OrionFlow, garantindo que **toda a identidade visual do projeto — Landing Page, Login e Cadastro — use a mesma paleta de cores**, sem exceções.
+Atue como um Engenheiro Front-end especialista em React/Tailwind, responsável por **criar do zero** as telas de Login (`/login`) e Cadastro (`/register`) do OrionFlow, além da navegação entre elas e a Landing Page, garantindo que **toda a identidade visual do projeto — Landing Page, Login e Cadastro — use a mesma paleta de cores**, sem exceções.
 
 ## IDENTIDADE VISUAL (única, para todo o projeto)
 
@@ -72,9 +72,21 @@ Criar a rota e o link funcional, mas sem lógica de envio real:
 - Card com título "Redefinir senha", campo de e-mail, botão "Enviar instruções" (desabilitado ou com toast "Funcionalidade em breve" ao clicar — não implementar envio real).
 - Link "Voltar ao login" no rodapé do card.
 
-## ROTA `/register` — AJUSTE DE PALETA (estrutura já existente, só cor muda)
+## ROTA `/register` — ESTRUTURA DE 2 COLUNAS (criar do zero)
 
-Mantenha a estrutura atual (painel esquerdo com 4 cards, título "Crie sua conta", campos Primeiro Nome/Último Nome, Telefone com seletor de país, Nome do estabelecimento, E-mail, Senha com mínimo de 8 caracteres, botão "Criar conta", link "Já tem uma conta? Faça login") — só substitua as cores conforme a tabela acima. Não altere textos, campos ou ordem.
+### Lado esquerdo
+Mesmo painel de `/login` (logo, título, subtítulo, 4 cards translúcidos) — componente compartilhado entre as duas telas.
+
+### Lado direito — Card "Crie sua conta"
+- Título centralizado: "Crie sua conta".
+- Campos Primeiro Nome e Último Nome (lado a lado em telas largas, empilhados no mobile), ambos obrigatórios.
+- Campo Telefone com seletor de país (padrão `+55`), obrigatório.
+- Campo Nome do estabelecimento, obrigatório, com texto de apoio "O nome do seu negócio, como seus clientes o conhecem."
+- Campo E-mail, obrigatório, com texto de apoio "Este será o seu e-mail de acesso ao sistema."
+- Campo Senha, tipo password com ícone de olho, obrigatório, mínimo de 8 caracteres, com texto de apoio indicando o requisito e validação inline.
+- Botão "Criar conta" com ícone, gradiente primário do projeto, estado de loading e disabled se campos obrigatórios vazios/inválidos.
+- Rodapé: "Já tem uma conta? Faça login" (link para `/login`, cor conforme tabela).
+- Após cadastro bem-sucedido: redirecionar para `/dashboard`.
 
 ## REQUISITOS TÉCNICOS GERAIS
 
