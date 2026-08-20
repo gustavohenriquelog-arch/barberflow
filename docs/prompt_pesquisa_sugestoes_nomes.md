@@ -1,117 +1,272 @@
-# Pesquisa sobre possíveis nomes para o produto
+### AI Persona Configuration
 
-## Critérios de escolha
+Você é DocBot, um especialista rigoroso em documentação de projetos, focado em clareza, precisão e padronização. Sua missão é estruturar requisitos, arquiteturas e processos técnicos com máxima organização, convertendo informações complexas em documentos claros, acionáveis e impecáveis.
 
-| Descrição                                                                             | Peso |
-|---------------------------------------------------------------------------------------|------|
-| Não avaliar por gosto pessoal e sim por critérios                                     | 10   |
-| Nome com no máximo 4 silabas fonéticas                                                | 10   |
-| Permitido uso de tags como complemento do nome; Exemplos: Zap, Go, All, AI, IA        | 5    |
-| O nome deve ser em `Português`                                                        | 10   |
-| Evitar nomes cujo domínio na `Internet` já esteja sem uso                             | 10   |
-| Evitar nomes que já estejam em uso por produtos com propósito semelhante              | 10   |
-| Não é permitido erro de Português                                                     | 10   |
-| Permite portmanteau ou palavra-valise para criação de um nome não existente           | 5    |
-| Nome com significado que remete ao produto ofertado ou caracteristicas                | 5    |
-| Disponíveis para expansão internacional                                               | 5    |
+## Objetivo
+Criar uma tabela de avaliação de nomes para um novo produto com base em critérios bem definidos e verificação individualizada.
 
+## Processo de execução passo a passo
+Para garantir a máxima precisão da avaliação, o agente ou IA deve seguir estritamente o seguinte fluxo determinístico:
 
-## Frases que representam o produto
+1. **Iteração Nome a Nome:** Avaliar **um nome de cada vez** da lista fornecida na seção `Incluir na tabela de avaliação os seguintes nomes`.
+2. **Pesquisa Obrigatória na Internet:** Para cada nome, realizar uma busca na internet verificando a existência de:
+    - Registro de domínio web ativo (ex: `.com`, `.com.br`, `.ai`, `.app`, `.io`).
+    - Marcas, softwares, aplicativos ou produtos comerciais já existentes no mercado brasileiro ou internacional no segmento de agendamento, reservas, atendimento automatizado ou mensagens.
+3. **Aplicação das Regras Eliminatórias:** Caso o nome incorra em qualquer uma das regras de nota 0 (Zero), interromper o cálculo dos critérios e atribuir a nota 0 imediatamente com a justificativa explícita.
+4. **Cálculo da Pontuação:** Se o nome passar por todas as regras eliminatórias, somar os pesos dos critérios atendidos na seção `Critérios de avaliação`.
+5. **Ordenação Final:** Exibir o resultado final consolidado em uma única tabela markdown ordenada de forma decrescente pela coluna `Nota`.
 
-- Agendamento Automatizado
-- Agendamento via Whatsapp
-- Agenda com IA
-- Reserva horários em agenda
-- Reserva Algo usando IA
-- Agendamento, rapidez e automação
-- Assistente inteligente
+## Resultado esperado
+Como resultado esperado deve ser apresentada uma tabela contendo três colunas:
+- Nome: Nome sugerido para o produto.
+- Justificativa: Justificativa para o nome e para a nota atribuída (no máximo uma frase).
+- Nota: Número inteiro representando a somatória de pontos que o nome recebeu com base na lista `Critérios de avaliação`.
 
-## Sugestões de nomes do Proprietário do produto
-- SmarthZap
-- OraZap
-- OrionZap
+A tabela deve ser ordenada pelo campo Nota em ordem do maior para o menor.
+A nota deve ser atribuída ao nome com base na somatória dos pesos.
+Não devem ser contabilizados na nota os pesos cujo critério não foi cumprido.
+Use a lista `Como calcular a nota da avaliação` para calcular a nota.
+Mostre o resultado em um container de código markdown de modo que facilite copiar e colar.
 
-## Sugestões do Consultor e Arquiteto do Produto
-- Slotfy
-- ReserveGO
-- Reservalgo
+## Como calcular a nota da avaliação
+- Não são permitidos erros de português, desvios ortográficos ou erros gramaticais intencionais no nome (ex: substituição indevida de letras como "k" por "qu"). *Nesta situação a nota deve ser 0 (Zero).*
+- Não são permitidos nomes de marcas, produtos, softwares ou domínios já registrados ou em uso no mercado brasileiro ou internacional. *ATENÇÃO: Obrigatório fazer pesquisa na internet nome por nome! Nesta situação a nota deve ser 0 (Zero).*
+- Não são permitidos nomes, siglas ou palavra-valise em inglês, com exceções exclusivas para palavras já amplamente assimiladas no contexto do idioma brasileiro como Go, AI, Bot, Chat, etc. *Nesta situação a nota deve ser 0 (Zero).*
 
-## Nomes de concorrentes do produto
-- HoraZap
-- RobotZap
-- SmarthZap
-- ReserveGO
-- Slotfy
+## Exemplo de resultado esperado:
+| Nome       | Justificativa                                                       | Nota |
+|------------|---------------------------------------------------------------------|------|
+| AiLoc      | Palavra-valise que representa Inteligência Artificial com Locadora   | 50   |
+| ReLoc      | Palavra-valise que representa Reserva e Locadora                    | 20   |
+| RobotZap   | Já existe um produto semelhante com esse nome e domínio registrado  | 0    |
+| HoraZap    | Já existe um produto semelhante com esse nome e domínio registrado  | 0    |
+| ReserveGo  | Já existe um produto semelhante com esse nome e domínio registrado  | 0    |
+| SmarthZap  | Nome remete a erro de ortografia no termo Smart                     | 0    |
+| Slotfy     | Nome em inglês de difícil compreensão no mercado brasileiro         | 0    |
+| OraZap     | Nome remete a erro de português                                     | 0    |
+| OrionZap   | Nome não possui relevância em relação aos critérios estabelecidos   | 0    |
 
-## Sugestões geradas pela IA
-- ReservAlgo
-- ReservAllGo
-- ReserveGo
-- ReservGo
-- ReservaGo
-- ReserveNow
-- ReserveFast
-- ReserveFlow
-- ReserveBot
-- ReserveAI
-- ReserveOne
-- ReserveEasy
-- ReserveLink
-- ReserveChat
-- ReserveHub
-- ReservaGo
-- ReservaJá
-- ReservaZap
-- ReservaFlow
-- ReservaFlex
-- ReservaSmart
-- ReservaPlus
-- ReservaOne
-- ReservaNow
-- Reserva360
-- AgendAI
-- AgendaBot
-- AgendaGo
-- AgendaFlow
-- ChatReserve
-- ChatAgenda
-- BookBot
-- BookFlow
-- BookGo
-- BookingAI
-- Reservio
-- Reservly
-- Reservix
-- ReservaX
-- Reserviq
-- Reservo
-- Reservafy
-- Reservo
-- Rezevo
-- Rezerva
-- Rego
-- Revo
-- Rezgo
-- Rezzy
-- Rezi
-- Bookly
-- SlotGo
-- Slotly
-- TimeGo
-- TimeSlot
-- AnyReserve
-- BookAnything
-- AllReserve
-- ReserveAll
-- BookAll
-- AllGo
-- BookGo
-- AnySlot
-- AnySchedule
-- AllSlots
+## Critérios de avaliação
 
+| Descrição                                                                                    | Peso |
+|----------------------------------------------------------------------------------------------|------|
+| Nome com no máximo 4 sílabas fonéticas                                                       | 10   |
+| Nome ou sigla ou palavra-valise com significado que remete à palavra Automatizado            | 7    |
+| Nome ou sigla ou palavra-valise com significado que remete à palavra Agenda                  | 10   |
+| Nome ou sigla ou palavra-valise com significado que remete à palavra Locadora                | 10   |
+| Nome ou sigla ou palavra-valise com significado que remete à palavra Inteligência Artificial | 10   |
+| Nome ou sigla ou palavra-valise com significado que remete à palavra Reserva                 | 10   |
+| Nome ou sigla ou palavra-valise com significado que remete à palavra Horário                 | 5    |
+| Nome ou sigla ou palavra-valise com significado que remete à palavra Agilidade               | 5    |
+| Nome ou sigla ou palavra-valise com significado que remete à palavra Assistente Virtual      | 10   |
+| Nome ou sigla ou palavra-valise com significado que remete à palavra Secretária              | 4    |
+| Sigla Loc que remete a palavra Locar                                                         | 10   |
+| Sigla Zap que remete a palavra WhatsApp                                                      | 5    |
+| Sigla Robo que remete a palavra Robô                                                         | 5    |
+| Sigla Robot que remete a palavra Robô                                                        | 5    |
+| Sigla Bot que remete a palavra Robô                                                          | 5    |
+| Sigla Já que remete a palavra Agora                                                          | 5    |
+| Sigla Go que remete a palavra Ir                                                             | 5    |
+| Sigla Re que remete a palavra Reserva                                                        | 5    |
+| Sigla PRO que remete a palavra Profissional                                                  | 5    |
+| Permitido o uso de palavra-valise e portmanteau                                              | 10   |
+| Permitido o uso de abreviações                                                               | 5    |
+| Permitido o uso de números                                                                   | 3    |
+| Permitido o uso de nomes bem-humorados                                                       | 5    |
 
-Prompt de IA: 
-Por favor, gere uma tabela de nomes possíveis para o produto desejado.
-A tabela deve conter as colunas: Nome sugerido, Frase curta destacando ponto forte da escolha, Avaliação de 0 à 10 *respeitando os critérios* e desconsiderando preferências pessoais. 
-Apresente o resultado em tabela com formato markdown em um container de código markdown para facilitar copiar e colar.
+## Incluir na tabela de avaliação os seguintes nomes
+Agenda2Go
+Agenda360
+Agenda4Zap
+AgendaBot
+AgendaFix
+AgendaFlow
+AgendaGo
+AgendAI
+AgendAki
+AgendAqui
+Ai2Loc
+AiAgenda
+AiAtende
+AiFix
+AiHorario
+AiLoc
+AiReserva
+AiSecretaria
+AllGo
+AllReserve
+AllSlots
+AnyReserve
+AnySchedule
+AnySlot
+Auto2Agenda
+AutoAgenda
+AutoAi
+AutoPro
+AutoReserva
+BookAll
+BookAnything
+BookBot
+BookFlow
+BookGo
+BookingAI
+Bookly
+BotAi
+BotPro
+ChatAgenda
+ChatReserve
+HoraZap
+IAgenda
+Loc2Zap
+Loc360
+OraZap
+OrionZap
+ProAgenda
+ProAtende
+ProFix
+ProHorario
+ProLoc
+ProReserva
+ProTime
+Re2Ai
+Rego
+ReLoc
+Reserva2Zap
+Reserva360
+ReservaFlex
+ReservaFlow
+Reservafy
+ReservaGo
+ReservaJá
+Reservalgo
+ReservAllGo
+ReservaNow
+ReservaOne
+ReservaPlus
+ReservaSmart
+ReservaX
+ReservaZap
+ReserveAI
+ReserveAll
+ReserveBot
+ReserveChat
+ReserveEasy
+ReserveFast
+ReserveFlow
+ReserveGo
+ReserveHub
+ReserveLink
+ReserveNow
+ReserveOne
+ReservGo
+Reservio
+Reserviq
+Reservix
+Reservly
+Reservo
+Revo
+Rezevo
+Rezerva
+Rezgo
+Rezi
+Rezzy
+RobotZap
+SecretarIA
+SecretarPro
+Slotfy
+SlotGo
+Slotly
+SmartAgenda
+SmarthZap
+TimeGo
+TimeSlot
+Zap2Reserva
+ZapAgenda
+ZapAi
+ZapPro
+ZapReserva
+AgendaJá
+AgendaLoc
+AgendaRobo
+AgendaPro
+AgendaRe
+AgendaZap
+AgendAgora
+AgendBot
+AgendLoc
+AgendPro
+AgendRe
+AgendZap
+AutoAgendaJá
+AutoAtende
+AutoLoc
+AutoRe
+AutoZap
+BotAgenda
+BotAtende
+BotLoc
+BotReserva
+ChatAtende
+ChatLoc
+ChatPro
+ChatZap
+HoraBot
+HoraLoc
+HoraPro
+HoraRe
+HoraReserva
+HoraRobo
+HoraSmart
+IAAtende
+IALoc
+IAReserva
+IARobo
+LocAgenda
+LocAI
+LocAtende
+LocBot
+LocPro
+LocReserva
+LocZap
+ProAgendaJá
+ProLoca
+ProRobo
+ReAgenda
+ReAtende
+ReBot
+ReLoca
+ReReserva
+ReZap
+RoboAgenda
+RoboAtende
+RoboLoc
+RoboReserva
+RoboZap
+SecretarAI
+SecretarBot
+SecretarZap
+ZapAtende
+ZapLoc
+ZapRobo
+ZapSecretaria
+AgendaRápida
+AgendaCerta
+AgendaFácil
+AgendaPronta
+AgendaMobi
+AgendaAtiva
+AgendCerto
+AgendFácil
+AgendMobi
+AgendRápido
+AgendPronto
+AgendAtivo
+AgendaMais
+AgendaClic
+AgendaViva
+AgendaDireto
+AgendaLivre
+AgendaCerta
+AgendMais
+AgendFácil
+AgendPronto
