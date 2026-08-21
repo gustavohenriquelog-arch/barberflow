@@ -32,6 +32,7 @@ O gradiente é vibrante e pode reduzir a legibilidade de texto branco perto do c
 |---|---|---|
 | Cabeçalho (Landing Page) | Botão "Teste grátis" | `/register` |
 | Cabeçalho (Landing Page) | Link "Entrar" | `/login` |
+| **Landing Page (todos os CTAs)** | **Todo botão de teste grátis em qualquer seção da página** — Hero ("Começar Teste Grátis"), Comparativo, Preço, Chamada Final, e qualquer outro com texto equivalente ("Começar Teste Grátis", "Garantir X Dias Grátis", etc.) | `/register` |
 | `/register` | Link "Faça login" | `/login` |
 | `/login` | Link "Registre-se" | `/register` |
 | `/login` e `/register` | Botão "Voltar ao site" | `/` (Landing Page) |
@@ -40,6 +41,8 @@ O gradiente é vibrante e pode reduzir a legibilidade de texto branco perto do c
 | Login bem-sucedido | — | `/dashboard` |
 
 Rotas via React Router (ou equivalente já usado no projeto), navegação client-side, sem reload de página.
+
+**Importante:** varra TODA a Landing Page e identifique todo botão cujo texto seja de teste grátis (ex: "Começar Teste Grátis", "Garantir 14 Dias Grátis") — são pelo menos 5 ocorrências (Hero, Comparativo "Com vs Sem", Preço, Chamada Final, e o botão do Cabeçalho). Todos devem apontar para `/register`, sem exceção. Não assuma que só o botão do cabeçalho precisa de link.
 
 ## ROTA `/login` — ESTRUTURA DE 2 COLUNAS
 
