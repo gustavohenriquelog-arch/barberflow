@@ -1,4 +1,4 @@
-# PROMPT: Copywriter de Landing Page — OrionFlow
+# PROMPT: Copywriter de Landing Page — OLYON
 
 Atue como um Copywriter sênior especialista em Landing Pages de SaaS B2B, com foco em alta conversão para microempresários e profissionais solo do setor de serviços (barbearia, salão, clínica, estética, personal trainer). Seu texto precisa soar como alguém que entende a rotina apertada desse público — não como uma agência de marketing corporativa.
 
@@ -17,7 +17,7 @@ Por isso, o eixo central da copy do OrionFlow deve ser: **"a única automação 
 
 ## DADOS DO NEGÓCIO
 
-- **Nome:** OrionFlow
+- **Nome:** OLYON
 - **O que faz:** Secretária virtual com IA no WhatsApp — agendamento autônomo, sincronização de agenda e respostas a dúvidas 24/7, entendendo linguagem natural (texto, gírias, erros de digitação e áudio).
 - **Conexão:** API Oficial WhatsApp Business (Meta Cloud API) — zero risco de banimento do número, coexistência total com o app do celular.
 - **Público-alvo:** Barbearias, salões de beleza, clínicas, esteticistas, personal trainers e profissionais liberais que vivem de agenda.
@@ -63,7 +63,7 @@ Por isso, o eixo central da copy do OrionFlow deve ser: **"a única automação 
 - CTA primário: "Começar Teste Grátis →"
 - Micro-copy: "14 dias grátis • Sem cartão de crédito • Cancele quando quiser"
 
-### 2. Comparativo "Com OrionFlow vs. Sem OrionFlow"
+### 2. Comparativo "Com OLYON vs. Sem OLYON"
 - 4 dores clássicas (mensagens acumuladas, cliente perdido pra concorrente, interrupção no meio do atendimento, erro de agendamento) vs. 4 transformações diretas.
 
 ### 3. Funcionalidades Principais (grid de 6)
@@ -84,23 +84,23 @@ Textos curtos e específicos por nicho: Barbearias e Salões | Clínicas e Consu
 **Subtítulo:** Tecnologia de ponta com estabilidade e proteção para o seu negócio.
 
 Bloco de benefícios:
-- 🛡️ 100% Oficial e Seguro — zero risco de bloqueio ou banimento.
-- 📱 Use Seu WhatsApp Normalmente — coexistência total com o app no celular.
-- ⚡ Recursos Avançados — linguagem natural, botões interativos, respostas estruturadas.
+- 100% Oficial e Seguro — zero risco de bloqueio ou banimento.
+- Use Seu WhatsApp Normalmente — coexistência total com o app no celular.
+- Recursos Avançados — linguagem natural, botões interativos, respostas estruturadas.
 
 Card visual: selo `ESTABILIDADE CERTIFICADA`, título "WhatsApp Business API", subtítulo "Infraestrutura Cloud de Alta Disponibilidade", com checklist (zero risco de banimento, botões/listas interativas, resposta 24h, coexistência com celular).
 
 ### 6. Como Funciona (3 passos)
 1. Conecte seu WhatsApp (QR Code, 100% seguro e oficial)
 2. Cadastre serviços, preços, duração, equipe e horários
-3. Piloto automático: OrionFlow assume o atendimento e mantém a agenda organizada
+3. Piloto automático: OLYON assume o atendimento e mantém a agenda organizada
 
 ### 7. Prova Social
 3 depoimentos verossímeis (ex: barbeiro solo, esteticista, personal trainer), cada um com 1 métrica concreta (tempo ganho, agendamento fora do horário comercial, redução de falta).
 
 ### 8. Preço
 - Tag: `PLANO ÚNICO`
-- R$ 87/mês, tudo incluso, sem taxa escondida.
+- R$ 97/mês, tudo incluso, sem taxa escondida.
 - Ancoragem: contraste com custo de secretária humana ou de um cliente perdido.
 - CTA: "Garantir 14 Dias Grátis"
 
