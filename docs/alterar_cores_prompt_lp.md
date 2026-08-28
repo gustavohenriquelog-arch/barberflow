@@ -1,4 +1,4 @@
-# PROMPT: Atualização de Paleta — OrionFlow (Landing Page, Login, Cadastro)
+# PROMPT: Atualização de Paleta — OLYON (Landing Page, Login, Cadastro)
 
 Atue como Engenheiro Front-end. Faça uma mudança de **cores apenas** — não é redesign. Aplique de forma global e consistente em Landing Page, `/login` e `/register`.
 
