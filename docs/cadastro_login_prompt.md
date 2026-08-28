@@ -1,6 +1,6 @@
 # PROMPT: Navegação + Telas de Login e Cadastro — OLYON (versão final)
 
-Atue como um Engenheiro Front-end especialista em React/Tailwind, responsável por **criar do zero** as telas de Login (`/login`) e Cadastro (`/register`) do OrionFlow, além da navegação entre elas e a Landing Page, garantindo que **toda a identidade visual do projeto — Landing Page, Login e Cadastro — use a mesma paleta de cores**, sem exceções.
+Atue como um Engenheiro Front-end especialista em React/Tailwind, responsável por **criar do zero** as telas de Login (`/login`) e Cadastro (`/register`) do OLYON, além da navegação entre elas e a Landing Page, garantindo que **toda a identidade visual do projeto — Landing Page, Login e Cadastro — use a mesma paleta de cores**, sem exceções.
 
 ## IDENTIDADE VISUAL (única, para todo o projeto)
 
