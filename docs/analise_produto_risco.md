@@ -1,4 +1,4 @@
-# Análise de Riscos do Produto OraZap
+# Análise de Riscos do Produto OLYON
 ## Visão para Investidores
 
 **Versão:** 2.0  
@@ -8,7 +8,7 @@
 
 # Objetivo
 
-Este documento apresenta uma análise estratégica dos principais riscos envolvidos no desenvolvimento e escalabilidade do **OraZap**, um SaaS de Agendamento Inteligente via WhatsApp.
+Este documento apresenta uma análise estratégica dos principais riscos envolvidos no desenvolvimento e escalabilidade do **OLYON**, um SaaS de Agendamento Inteligente via WhatsApp.
 
 A avaliação foi elaborada sob a perspectiva de um investidor ou conselho de administração, considerando fatores técnicos, operacionais, financeiros e de mercado.
 
@@ -470,7 +470,7 @@ O modelo pode ser adaptado para diferentes idiomas e mercados.
 
 # Conclusão
 
-Sob a ótica de investimento, o OraZap apresenta **alto potencial de crescimento** em um mercado em expansão, sustentado por um modelo de receita recorrente e uma dor clara do cliente.
+Sob a ótica de investimento, o OLYON apresenta **alto potencial de crescimento** em um mercado em expansão, sustentado por um modelo de receita recorrente e uma dor clara do cliente.
 
 Os riscos mais relevantes não estão relacionados à Inteligência Artificial em si, mas à **execução do negócio**, especialmente:
 
