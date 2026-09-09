@@ -1,6 +1,6 @@
-# 📱 Conceito: Mobile-First no OraZap
+# 📱 Conceito: Mobile-First no OLYON
 
-Este documento resume a filosofia de design e desenvolvimento **Mobile-First** (Primeiro o Celular) e como ela se aplica de forma prática como o principal diferencial competitivo do **OraZap**.
+Este documento resume a filosofia de design e desenvolvimento **Mobile-First** (Primeiro o Celular) e como ela se aplica de forma prática como o principal diferencial competitivo do **OLYON**.
 
 ---
 
@@ -12,11 +12,11 @@ Diferente do modelo tradicional (onde se cria um sistema para computador e depoi
 
 ---
 
-## 🎯 Por que o Mobile-First é vital para o OraZap?
+## 🎯 Por que o Mobile-First é vital para o OLYON?
 
 Nossos principais concorrentes de mercado (*Trinks, SmartZaap*) nasceram na era do desktop e possuem painéis densos, pesados e cheios de menus complexos — ótimos para uma secretária em um computador, mas péssimos para quem está na correria do dia a dia.
 
-O **OraZap** adota o Mobile-First para resolver a vida do profissional que trabalha em pé, na rua ou entre atendimentos (barbeiros, esteticistas, terapeutas, consultores).
+O **OLYON** adota o Mobile-First para resolver a vida do profissional que trabalha em pé, na rua ou entre atendimentos (barbeiros, esteticistas, terapeutas, consultores).
 
 ### 1. Fricção Zero (Sem Instalação)
 * **Para o Cliente Final:** Não há necessidade de baixar aplicativos ou criar cadastros burocráticos. Toda a interação e agendamento ocorrem no aplicativo de celular mais usado do mundo: o **WhatsApp**.
@@ -28,7 +28,7 @@ Em vez de recriar ferramentas complexas, o OraZap se integra de forma inteligent
 * Notificações rápidas e alertas instantâneos de novos agendamentos na tela de bloqueio.
 
 ### 3. Design Minimalista e Veloz
-* Telas menores exigem foco absoluto. O OraZap elimina gráficos poluídos e foca nas 3 ações essenciais para o prestador de serviço:
+* Telas menores exigem foco absoluto. O OLYON elimina gráficos poluídos e foca nas 3 ações essenciais para o prestador de serviço:
     1. Visualizar a agenda do dia.
     2. Pausar/Ativar a IA de atendimento.
     3. Monitorar o faturamento diário.
@@ -37,7 +37,7 @@ Em vez de recriar ferramentas complexas, o OraZap se integra de forma inteligent
 
 ## 🛠️ Diretrizes de Desenvolvimento para a Equipe
 
-Ao programar e desenhar novas funcionalidades para o OraZap, siga sempre estes três pilares:
+Ao programar e desenhar novas funcionalidades para o OLYON, siga sempre estes três pilares:
 
 * ⚡ **Performance:** O sistema precisa carregar instantaneamente em redes móveis (3G/4G/5G).
 * 🎯 **Acessibilidade:** Botões e áreas de clique devem ser grandes o suficiente para serem tocados facilmente com o polegar.
