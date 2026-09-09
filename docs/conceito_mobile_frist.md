@@ -23,7 +23,7 @@ O **OLYON** adota o Mobile-First para resolver a vida do profissional que trabal
 * **Para o Empreendedor:** O painel de configuração do OLYON (horários, serviços e preços) é uma página web ultra-leve, projetada para ser configurada em menos de 5 minutos diretamente pela tela do smartphone.
 
 ### 2. Recursos Nativos do Celular
-Em vez de recriar ferramentas complexas, o OraZap se integra de forma inteligente com o ecossistema que o usuário já utiliza em seu telefone:
+Em vez de recriar ferramentas complexas, o OLYON se integra de forma inteligente com o ecossistema que o usuário já utiliza em seu telefone:
 * Envio de agendamentos direto para o calendário padrão (**Google Agenda / Apple Calendar**).
 * Notificações rápidas e alertas instantâneos de novos agendamentos na tela de bloqueio.
 
