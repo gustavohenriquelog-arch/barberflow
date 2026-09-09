@@ -1,4 +1,4 @@
-# 🚀 OraZap: O Futuro do Agendamento Inteligente via WhatsApp
+# 🚀 OLYON: O Futuro do Agendamento Inteligente via WhatsApp
 
 > **O assistente conversacional com Inteligência Artificial que vende, atende e organiza o seu negócio 24/7 direto no WhatsApp. Sem fricção, sem complicação e com foco mobile-first.**
 
@@ -6,7 +6,7 @@
 
 ## 📌 Quem Somos e Nosso Propósito
 
-O **OraZap** nasceu para resolver um dos maiores problemas de micro, pequenas e médias empresas (PMEs) e profissionais autônomos no Brasil: **a perda de tempo e dinheiro com o gerenciamento manual de agendas e o atendimento ao cliente.**
+O **OLYON** nasceu para resolver um dos maiores problemas de micro, pequenas e médias empresas (PMEs) e profissionais autônomos no Brasil: **a perda de tempo e dinheiro com o gerenciamento manual de agendas e o atendimento ao cliente.**
 
 Nosso propósito é **auxiliar empreendedores a modernizarem e automatizarem seus processos a um preço justo**, devolvendo o recurso mais precioso que eles possuem: **tempo** para focar na qualidade do serviço e no crescimento estratégico do negócio.
 
@@ -23,10 +23,10 @@ Quem gerencia um negócio de serviços hoje enfrenta desafios diários e caros:
 
 ## 💡 A Solução OraZap: O Poder da IA Conversacional
 
-O **OraZap** elimina toda a fricção do agendamento criando um fluxo natural de conversação onde o seu cliente se sente atendido por um humano altamente eficiente. 
+O **OLYON** elimina toda a fricção do agendamento criando um fluxo natural de conversação onde o seu cliente se sente atendido por um humano altamente eficiente. 
 
 ### 1. Fricção Zero (Agendamento em 3 Cliques)
-O cliente final não precisa baixar aplicativos, criar logins ou preencher formulários. Ele inicia uma conversa no WhatsApp e a Inteligência Artificial do OraZap faz todo o trabalho:
+O cliente final não precisa baixar aplicativos, criar logins ou preencher formulários. Ele inicia uma conversa no WhatsApp e a Inteligência Artificial do OLYON faz todo o trabalho:
 *   **Interpreta linguagem natural:** *"Olá, quero cortar o cabelo no sábado de manhã"*.
 *   **Oferece as opções livres:** Em 3 segundos, a IA lê o banco de dados e sugere horários disponíveis.
 *   **Confirma e agenda:** Registra o horário e sincroniza tudo instantaneamente.
@@ -38,7 +38,7 @@ Criado sob medida para profissionais que não param na frente de um computador (
 3.  **Deixe a IA trabalhar** de forma 100% autônoma enquanto você atende.
 
 ### 3. Sistema de Agendamento Independente e Inteligente
-*   **Sincronização com o Calendário do Celular:** Seus agendamentos caem direto no Google Agenda ou Apple Calendar. Se você marcar um compromisso pessoal na sua agenda padrão, o OraZap bloqueia aquele horário no WhatsApp automaticamente.
+*   **Sincronização com o Calendário do Celular:** Seus agendamentos caem direto no Google Agenda ou Apple Calendar. Se você marcar um compromisso pessoal na sua agenda padrão, o OLYON bloqueia aquele horário no WhatsApp automaticamente.
 *   **Lista de Espera Ativa:** Surgiu um cancelamento? O robô consulta quem estava na lista de espera e oferece a vaga no WhatsApp. A vaga é preenchida em minutos, sem que você precise mover um dedo.
 *   **Lembretes e Redução de No-Show:** Mensagens automáticas de confirmação reduzem o esquecimento de clientes de forma drástica.
 
@@ -46,7 +46,7 @@ Criado sob medida para profissionais que não param na frente de um computador (
 
 ## 🛠️ Tecnologia de Ponta e Flexibilidade
 
-Nós construímos o OraZap com o que há de mais moderno e escalável na engenharia de software mundial:
+Nós construímos o OLYON com o que há de mais moderno e escalável na engenharia de software mundial:
 
 *   **Conexão Híbrida:** 
     *   *Instância QR Code (Não Oficial):* Perfeito para quem está começando, validando ideias e precisa de um custo de entrada baixíssimo.
@@ -58,7 +58,7 @@ Nós construímos o OraZap com o que há de mais moderno e escalável na engenha
 
 ## 💎 Nosso Diferencial Competitivo
 
-| Característica | Concorrentes Tradicionais | OraZap |
+| Característica | Concorrentes Tradicionais | OLYON |
 | :--- | :--- | :--- |
 | **Experiência** | Formulários frios ou aplicativos obrigatórios. | Conversa natural e dinâmica no WhatsApp. |
 | **Setup do Sistema** | Horas configurando painéis pesados de desktop. | 5 minutos via página mobile-first simplificada. |
@@ -69,7 +69,7 @@ Nós construímos o OraZap com o que há de mais moderno e escalável na engenha
 
 ## 🎯 Planos e Comercialização
 
-O OraZap será distribuído através de um modelo SaaS (Software as a Service) com planos acessíveis e transparentes. 
+O OLYON será distribuído através de um modelo SaaS (Software as a Service) com planos acessíveis e transparentes. 
 
 *   **Plano Starter (Autônomos e MEI):** Perfeito para quem atende sozinho. Agenda independente automatizada, IA integrada e conexão facilitada.
 *   **Plano Business (Clínicas e Redes):** Multi-profissionais, conexão via API Oficial da Meta, dashboards de desempenho, campanhas automatizadas de reativação de clientes e recursos avançados da IA.
@@ -78,8 +78,8 @@ O OraZap será distribuído através de um modelo SaaS (Software as a Service) c
 
 ## 📈 Junte-se ao Futuro da Automação
 
-O OraZap não é apenas uma ferramenta de marcar horários. Nós somos o parceiro de negócios silencioso que trabalha 24 horas por dia para garantir que sua empresa nunca mais perca uma venda por falta de resposta.
+O OLYON não é apenas uma ferramenta de marcar horários. Nós somos o parceiro de negócios silencioso que trabalha 24 horas por dia para garantir que sua empresa nunca mais perca uma venda por falta de resposta.
 
 Para saber mais sobre desenvolvimento, parcerias comerciais ou testes beta, entre em contato:
-*   **Site Oficial:** [orazap.tech](https://orazap.tech)
-*   **E-mail de Contato:** `orazap.contato@gmail.com`
+*   **Site Oficial:** [olyon.com](https://olyon.com)
+*   **E-mail de Contato:** `olyon.contato@gmail.com`
