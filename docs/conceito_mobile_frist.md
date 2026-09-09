@@ -20,7 +20,7 @@ O **OLYON** adota o Mobile-First para resolver a vida do profissional que trabal
 
 ### 1. Fricção Zero (Sem Instalação)
 * **Para o Cliente Final:** Não há necessidade de baixar aplicativos ou criar cadastros burocráticos. Toda a interação e agendamento ocorrem no aplicativo de celular mais usado do mundo: o **WhatsApp**.
-* **Para o Empreendedor:** O painel de configuração do OraZap (horários, serviços e preços) é uma página web ultra-leve, projetada para ser configurada em menos de 5 minutos diretamente pela tela do smartphone.
+* **Para o Empreendedor:** O painel de configuração do OLYON (horários, serviços e preços) é uma página web ultra-leve, projetada para ser configurada em menos de 5 minutos diretamente pela tela do smartphone.
 
 ### 2. Recursos Nativos do Celular
 Em vez de recriar ferramentas complexas, o OraZap se integra de forma inteligente com o ecossistema que o usuário já utiliza em seu telefone:
