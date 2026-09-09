@@ -21,7 +21,7 @@ Quem gerencia um negócio de serviços hoje enfrenta desafios diários e caros:
 
 ---
 
-## 💡 A Solução OraZap: O Poder da IA Conversacional
+## 💡 A Solução OLYON: O Poder da IA Conversacional
 
 O **OLYON** elimina toda a fricção do agendamento criando um fluxo natural de conversação onde o seu cliente se sente atendido por um humano altamente eficiente. 
 
