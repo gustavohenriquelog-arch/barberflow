@@ -75,6 +75,8 @@ networks:
   traefik-proxy:
     external: true
 
+---
+
     O que mudou nesta estrutura:
 Remoção de portas diretas: A linha de mapeamento de porta externa foi apagada (ports: ...). A API não expõe mais sua porta de forma isolada para fora do servidor.
 
