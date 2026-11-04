@@ -74,3 +74,27 @@ networks:
     external: true
   traefik-proxy:
     external: true
+
+    O que mudou nesta estrutura:
+Remoção de portas diretas: A linha de mapeamento de porta externa foi apagada (ports: ...). A API não expõe mais sua porta de forma isolada para fora do servidor.
+
+Inclusão da rede: Adicionada a rede externa - traefik-proxy para que o Traefik se comunique com o container.
+
+Labels do Traefik:
+
+rule=Host(api.olyon.cloud): Define o novo domínio de acesso.
+
+entrypoints=websecure: Utiliza a porta segura (HTTPS).
+
+tls.certresolver=letsencrypt: Solicita a geração automática do certificado SSL.
+
+loadbalancer.server.port=8081: Direciona o tráfego para a porta interna correta da sua aplicação.
+
+Passo 5: Reimplantar e Validar
+Salve o arquivo YAML atualizado no diretório do seu projeto ou painel de gerenciamento.
+
+Reimplante / Atualize o container do projeto barb-api-test.
+
+Monitore os logs do Traefik para garantir que ele reconheceu as novas labels e emitiu o certificado SSL Let's Encrypt com sucesso para api.olyon.cloud.
+
+Acesse https://api.olyon.cloud pelo navegador ou faça uma requisição de teste para validar o fluxo completo.
